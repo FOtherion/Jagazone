@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+  {% trans "Register"%}
+{% endblock title %}
+{% block content %}
+    <form method="post"
+          >
+      {% csrf_token %}
+      {{ register_form|crispy }}
+
+      <button type="submit" class="btn btn-primary">Register >></button>
+    </form>
+{% endblock content %}

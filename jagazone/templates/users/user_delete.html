@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n%}
+
+{% block content %}
+    <p>{% blocktranslate %}
+      <br>
+      <br>
+      <b>Are you sure you want to delete the account?
+
+      <p>All of the following related items will be deleted:</p></b>
+      {% endblocktranslate %}</p>
+    <br>
+      <br>
+    <form method="post">{% csrf_token %}
+    <div>
+      {{ delete_user }}
+    <input type="hidden" name="post" value="yes">
+    <input type="submit" class="btn btn-danger" value="{% translate 'Yes, I’m sure' %}">
+    <a href="#" class="btn btn-warning">{% translate "No, take me back" %}</a>
+    </div>
+    </form>
+{% endblock content %}

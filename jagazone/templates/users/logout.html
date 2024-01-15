@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+  {% trans "Logout"%}
+{% endblock %
+{% block content %}
+  {%if user.is_autenticated%}
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-primary"> You shure? </button>
+    </form>
+  {% endif %}
+{% endblock %}

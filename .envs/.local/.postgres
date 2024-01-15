@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=jagazone
+POSTGRES_USER=QPWCrhobIJoXsPQtZzLYZFXeoarfjLlS
+POSTGRES_PASSWORD=D9JurfCE2LQQFXJBIL5yuiW4M2pfdDHQUI3t5gFPGTwQxspbAa7hADZxSqxVv7Pt
